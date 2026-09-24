@@ -1,49 +1,51 @@
-# Lung Cancer Staging Calculator (AJCC 9th Edition) (試作練習用)
+# Lung Cancer Staging Calculator (AJCC 9th Edition) (practice prototype)
 
-**結論：** 本專案為一基於網頁前端技術開發之醫療輔助運算工具，專為臨床醫師、醫學生與研究人員設計。系統透過接收 T (Tumor)、N (Node)、M (Metastasis) 參數，即時運算並輸出符合 AJCC 第 9 版規範的肺癌分期結果。
+**English** | [繁體中文](README.zh-TW.md)
+
+**Summary:** A web-frontend clinical calculation aid designed for clinicians, medical students and researchers. It takes T (Tumor), N (Node) and M (Metastasis) inputs and instantly outputs the lung cancer stage according to the AJCC 9th edition. The interface is in Traditional Chinese.
 
 ## 🔗 Live Demo
-線上預覽與實際操作工具：[https://lianggaga927-beep.github.io/lung-ajcc-calc/](https://liangrxdev.github.io/lung-ajcc-calc/)
+Try the tool online: [https://liangrxdev.github.io/lung-ajcc-calc/](https://liangrxdev.github.io/lung-ajcc-calc/)
 
 ---
 
-## 📊 系統規格與客觀數據
+## 📊 Specifications
 
-| 項目 | 說明與規格 |
+| Item | Description |
 | :--- | :--- |
-| **醫學依據** | AJCC Cancer Staging Manual, 9th Edition (Lung Cancer) |
-| **系統架構** | 單頁式應用程式 (SPA), 100% Client-side rendering |
-| **開發技術** | HTML5, Vanilla JavaScript, CSS3 |
-| **部署環境** | GitHub Pages (靜態託管) |
-| **資料隱私** | 無資料庫、無伺服器端資料傳輸，符合病患隱私安全要求 |
+| **Medical basis** | AJCC Cancer Staging Manual, 9th Edition (Lung Cancer) |
+| **Architecture** | Single-page application (SPA), 100% client-side rendering |
+| **Technology** | HTML5, vanilla JavaScript, CSS3 |
+| **Hosting** | GitHub Pages (static hosting) |
+| **Data privacy** | No database and no server-side data transfer, meeting patient privacy requirements |
 
 ---
 
-## ⚙️ 核心功能與操作步驟
+## ⚙️ Core Features and Usage
 
-1. **參數輸入**：使用者於下拉選單選擇 T、N、M 之次分類 (例如：T1b, N2a, M0)。選項定義皆已對齊 AJCC 9th 臨床規範。
-2. **即時運算**：DOM (Document Object Model) 監聽 `onchange` 事件，無須點擊送出，JavaScript 引擎即時執行分期邏輯演算法。
-3. **結果輸出與視覺標示**：動態顯示最終分期 (如 Stage IIA)。系統將依據疾病嚴重程度 (Stage I 至 Stage IV) 賦予不同的視覺化警示色階。
-4. **EMR 整合輔助 (一鍵複製)**：內建 Clipboard API 功能，點擊按鈕即可匯出格式化字串 (例：`Lung Cancer AJCC 9th Staging: T2a + N1 + M0 👉 Result: Stage IIB`)，大幅提升電子病歷寫作效率。
-
----
-
-## 🧠 判讀演算法設計基礎
-
-系統演算法的優先判斷層次嚴格遵循臨床邏輯，採用**由重至輕 (Top-down)** 的降階檢驗機制：
-
-1. **M 優先級檢驗 (遠端轉移)**
-   * M = `M1a` 或 `M1b` $\rightarrow$ 判定為 **Stage IVA**
-   * M = `M1c1` 或 `M1c2` $\rightarrow$ 判定為 **Stage IVB**
-2. **N 優先級檢驗 (區域淋巴結)**
-   * 在排除 M1 條件後，系統依序由 `N3`、`N2b`、`N2a`、`N1` 往下檢驗。
-3. **T 組合映射 (原發腫瘤)**
-   * 確認 N 狀態後，將 T 參數與內建邏輯群組 (如：T1 group = T1mi, T1a, T1b, T1c) 進行比對，映射出最終 Stage。
-   * *邏輯校正提示：已處理 AJCC 表格中特殊的跨級別合併設定（如 T4 合併 N2a/N2b 均為 Stage IIIB）。*
+1. **Input**: choose T, N and M subcategories from dropdowns (e.g. T1b, N2a, M0). Option definitions are aligned with the AJCC 9th clinical criteria.
+2. **Instant calculation**: the DOM (Document Object Model) listens for `onchange` events, so there is no submit button; the JavaScript engine runs the staging algorithm immediately.
+3. **Result output and visual cues**: the final stage (e.g. Stage IIA) is shown dynamically, with a different warning color scale for each severity level (Stage I to Stage IV).
+4. **EMR helper (one-click copy)**: uses the Clipboard API; one click exports a formatted string (e.g. `Lung Cancer AJCC 9th Staging: T2a + N1 + M0 👉 Result: Stage IIB`), greatly speeding up EMR documentation.
 
 ---
 
-## ⚠️ 免責聲明與推論限制
+## 🧠 Staging Algorithm Design
 
-* **客觀事實**：本工具之底層演算法完全轉譯自 AJCC 第 9 版之公開圖表。
-* **推論限制**：本程式僅為臨床參數運算輔助工具。分期之最終確立，仍需仰賴專業臨床醫師綜合病患之影像學報告、病理學切片與臨床表徵進行全面性判讀。本工具不承擔醫療診斷之法律責任。
+The algorithm's order of evaluation strictly follows clinical logic, using a **top-down** step-down check from most to least severe:
+
+1. **M check first (distant metastasis)**
+   * M = `M1a` or `M1b` $\rightarrow$ **Stage IVA**
+   * M = `M1c1` or `M1c2` $\rightarrow$ **Stage IVB**
+2. **N check next (regional lymph nodes)**
+   * After ruling out M1, the system checks `N3`, `N2b`, `N2a`, `N1` in order.
+3. **T mapping (primary tumor)**
+   * With the N status known, the T input is matched against built-in logical groups (e.g. T1 group = T1mi, T1a, T1b, T1c) to map to the final stage.
+   * *Logic note: special cross-level merges in the AJCC table are handled (e.g. T4 with N2a/N2b are both Stage IIIB).*
+
+---
+
+## ⚠️ Disclaimer and Limitations
+
+* **Fact**: the underlying algorithm is translated entirely from the published AJCC 9th edition tables.
+* **Limitation**: this program is only an aid for calculating clinical parameters. Final staging still depends on a professional clinician's comprehensive interpretation of the patient's imaging reports, pathology and clinical presentation. This tool assumes no legal responsibility for medical diagnosis.
