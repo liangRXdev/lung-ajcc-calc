@@ -5,7 +5,7 @@
 **結論：** 本專案為一基於網頁前端技術開發之醫療輔助運算工具，專為臨床醫師、醫學生與研究人員設計。系統透過接收 T (Tumor)、N (Node)、M (Metastasis) 參數，即時運算並輸出符合 AJCC 第 9 版規範的肺癌分期結果。
 
 ## 🔗 Live Demo
-線上預覽與實際操作工具：[https://lianggaga927-beep.github.io/lung-ajcc-calc/](https://liangrxdev.github.io/lung-ajcc-calc/)
+線上預覽與實際操作工具：[https://liangrxdev.github.io/lung-ajcc-calc/](https://liangrxdev.github.io/lung-ajcc-calc/)
 
 ---
 
