@@ -332,8 +332,10 @@
 </div>
 
 <script src="js/staging.js"></script>
+<script src="js/clipboard.js"></script>
 <script>
     const { determineStage, getStageDescription, buildCopyText } = window.LungStaging;
+    const { legacyCopy, copyText, createCopyFeedback } = window.LungClipboard;
 
     const tSelect = document.getElementById('t-stage');
     const nSelect = document.getElementById('n-stage');
@@ -453,53 +455,39 @@
 
         const textToCopy = buildCopyText(t, n, m, stageText, lang);
 
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(textToCopy).then(
-                () => handleCopySuccess(),
-                () => fallbackCopy(textToCopy)
-            );
-        } else {
-            fallbackCopy(textToCopy);
-        }
-    }
-
-    function fallbackCopy(text) {
-        try {
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.style.position = 'fixed';
-            textArea.style.top = '-1000px';
-            textArea.style.left = '-1000px';
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            const successful = document.execCommand('copy');
-            document.body.removeChild(textArea);
-
-            if (successful) {
-                handleCopySuccess();
-            } else {
+        const token = copyFeedback.begin();
+        copyText(textToCopy, {
+            clipboard: navigator.clipboard,
+            legacyCopy: (text) => legacyCopy(text, document)
+        }).then((ok) => {
+            if (ok) {
+                copyFeedback.succeed(token);
+            } else if (copyFeedback.fail(token)) {
                 alert('複製失敗，請手動選取文字複製。');
             }
-        } catch (e) {
-            alert('複製失敗，請手動選取文字複製。');
+        });
+    }
+
+    function renderCopyButton(state) {
+        if (state === 'copied') {
+            copyBtn.classList.add('copied');
+            btnText.innerText = '已複製！';
+            btnIcon.innerText = '✅';
+        } else {
+            copyBtn.classList.remove('copied');
+            btnText.innerText = '複製結果';
+            btnIcon.innerText = '📋';
         }
     }
 
-    function handleCopySuccess() {
-        copyBtn.classList.add('copied');
-        btnText.innerText = '已複製！';
-        btnIcon.innerText = '✅';
-
-        setTimeout(() => {
-            resetCopyButton();
-        }, 2000);
-    }
+    const copyFeedback = createCopyFeedback({
+        render: renderCopyButton,
+        schedule: (fn, ms) => setTimeout(fn, ms),
+        cancel: (id) => clearTimeout(id)
+    });
 
     function resetCopyButton() {
-        copyBtn.classList.remove('copied');
-        btnText.innerText = '複製結果';
-        btnIcon.innerText = '📋';
+        copyFeedback.reset();
     }
 
     function resetAllFields() {
