@@ -26,22 +26,35 @@ Try the tool online: [https://liangrxdev.github.io/lung-ajcc-calc/](https://lian
 1. **Input**: choose T, N and M subcategories from dropdowns (e.g. T1b, N2a, M0). Option definitions are aligned with the AJCC 9th clinical criteria.
 2. **Instant calculation**: the DOM (Document Object Model) listens for `onchange` events, so there is no submit button; the JavaScript engine runs the staging algorithm immediately.
 3. **Result output and visual cues**: the final stage (e.g. Stage IIA) is shown dynamically, with a different warning color scale for each severity level (Stage I to Stage IV).
-4. **EMR helper (one-click copy)**: uses the Clipboard API; one click exports a formatted string (e.g. `Lung Cancer AJCC 9th Staging: T2a + N1 + M0 👉 Result: Stage IIB`), greatly speeding up EMR documentation.
+4. **EMR helper (one-click copy)**: uses the Clipboard API (falls back to `execCommand('copy')`); one click exports a formatted multi-line string in Chinese or English, e.g.:
+   ```
+   Lung Cancer AJCC 9th Staging
+   TNM: cT2a N1 M0
+   Stage: Stage IIB
+   For educational use only; not for clinical decision making.
+   ```
 
 ---
 
 ## 🧠 Staging Algorithm Design
 
-The algorithm's order of evaluation strictly follows clinical logic, using a **top-down** step-down check from most to least severe:
+Implemented in `determineStage(t, n, m)` in `js/staging.js`, evaluated **top-down** from most to least severe:
 
 1. **M check first (distant metastasis)**
-   * M = `M1a` or `M1b` $\rightarrow$ **Stage IVA**
    * M = `M1c1` or `M1c2` $\rightarrow$ **Stage IVB**
-2. **N check next (regional lymph nodes)**
-   * After ruling out M1, the system checks `N3`, `N2b`, `N2a`, `N1` in order.
+   * M = `M1a` or `M1b` $\rightarrow$ **Stage IVA**
+   * Any T (including `TX` and `Tis`) and any N with M1 is staged as IV.
+2. **N check next (M0 only)**: `N3` → `N2b` → `N2a` → `N1` → `N0`.
 3. **T mapping (primary tumor)**
-   * With the N status known, the T input is matched against built-in logical groups (e.g. T1 group = T1mi, T1a, T1b, T1c) to map to the final stage.
-   * *Logic note: special cross-level merges in the AJCC table are handled (e.g. T4 with N2a/N2b are both Stage IIIB).*
+   * With the N status known, T is matched against groups (T1 group = T1mi, T1a, T1b, T1c; T2 group = T2a, T2b) to map to the final stage.
+   * *Cross-level merges in the table are handled (e.g. T4 with N2a/N2b are both Stage IIIB; T2 with N2b is Stage IIIB).*
+4. **Special N0 M0 rows**: `TX N0 M0` → **Occult Carcinoma**; `Tis N0 M0` → **Stage 0**; `T1mi N0 M0` → **Stage IA1**.
+5. **No matching stage group**: `TX` or `Tis` with `N1`–`N3` and `M0` (8 combinations) returns `無對應分期` (English copy: `No matching stage group`).
+
+## 🧪 Development
+
+* No build step and no external dependencies; `index.html` loads `js/staging.js` and `js/clipboard.js` with plain `<script src>`.
+* Tests use the Node.js built-in runner (Node ≥ 18): `node --test`.
 
 ---
 
