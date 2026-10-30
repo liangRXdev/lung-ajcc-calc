@@ -1,0 +1,2005 @@
+{
+ "source": "bcb1ffe:index.html",
+ "rows": [
+  {
+   "t": "TX",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Occult Carcinoma",
+   "valid": true,
+   "desc": "以痰細胞學等發現癌細胞，但影像學未見明確原發腫瘤（隱匿癌）。"
+  },
+  {
+   "t": "TX",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N1",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "TX",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "TX",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "TX",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N3",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "TX",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "TX",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage 0",
+   "valid": true,
+   "desc": "原位癌，局限於上皮層，尚未侵犯基底膜，屬最早期病變。"
+  },
+  {
+   "t": "Tis",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N1",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "Tis",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N3",
+   "m": "M0",
+   "stage": "無對應分期",
+   "valid": false,
+   "desc": "此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。"
+  },
+  {
+   "t": "Tis",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "Tis",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IA1",
+   "valid": true,
+   "desc": "局限於肺內小腫瘤，無淋巴結或遠端轉移，預後相對較佳。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1mi",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IA1",
+   "valid": true,
+   "desc": "局限於肺內小腫瘤，無淋巴結或遠端轉移，預後相對較佳。"
+  },
+  {
+   "t": "T1a",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1a",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1a",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1a",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IA2",
+   "valid": true,
+   "desc": "局限於肺內小腫瘤，無淋巴結或遠端轉移，預後相對較佳。"
+  },
+  {
+   "t": "T1b",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1b",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1b",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1b",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IA3",
+   "valid": true,
+   "desc": "局限於肺內小腫瘤，無淋巴結或遠端轉移，預後相對較佳。"
+  },
+  {
+   "t": "T1c",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1c",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T1c",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T1c",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IB",
+   "valid": true,
+   "desc": "腫瘤稍大但仍局限於肺部，無淋巴結或遠端轉移。"
+  },
+  {
+   "t": "T2a",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2a",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2a",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2a",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2b",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2b",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T2b",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T2b",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T3",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T3",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T3",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T3",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIC",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T3",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T3",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N0",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T4",
+   "n": "N0",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N0",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N0",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N0",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N1",
+   "m": "M0",
+   "stage": "Stage IIIA",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T4",
+   "n": "N1",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N1",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N1",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N1",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2a",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T4",
+   "n": "N2a",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2a",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2a",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2a",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2b",
+   "m": "M0",
+   "stage": "Stage IIIB",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T4",
+   "n": "N2b",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2b",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2b",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N2b",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N3",
+   "m": "M0",
+   "stage": "Stage IIIC",
+   "valid": true,
+   "desc": "局部進展期，可能累及鄰近結構或同側肺門淋巴結。"
+  },
+  {
+   "t": "T4",
+   "n": "N3",
+   "m": "M1a",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N3",
+   "m": "M1b",
+   "stage": "Stage IVA",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N3",
+   "m": "M1c1",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  },
+  {
+   "t": "T4",
+   "n": "N3",
+   "m": "M1c2",
+   "stage": "Stage IVB",
+   "valid": true,
+   "desc": "遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。"
+  }
+ ]
+}
