@@ -26,3 +26,19 @@ test('複製文字的 TNM 與 stage 與畫面（determineStage）一致：250 �
         assert.ok(copyFor(t, n, m, 'en').includes(`TNM: c${t} ${n} ${m}\n`));
     }
 });
+
+// 重現：TX N1 M0 選 English 複製 → 'Stage: 無對應分期'
+test('英文複製不含中文（含無對應分期的組合）', () => {
+    for (const t of T_VALUES) for (const n of N_VALUES) for (const m of M_VALUES) {
+        const text = copyFor(t, n, m, 'en');
+        assert.doesNotMatch(text, /[㐀-鿿]/, `${t} ${n} ${m}: ${text}`);
+    }
+});
+
+test('英文複製：無對應分期 → No matching stage group', () => {
+    assert.match(copyFor('TX', 'N1', 'M0', 'en'), /\nStage: No matching stage group \(not in AJCC 9th table\)\n/);
+});
+
+test('中文複製：無對應分期維持原字', () => {
+    assert.match(copyFor('Tis', 'N3', 'M0', 'zh'), /\n期別：無對應分期\n/);
+});

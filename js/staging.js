@@ -148,6 +148,11 @@
         return '請搭配 AJCC 第 9 版正式指引與臨床評估解讀此分期結果。';
     }
 
+    // determineStage 的「無對應分期」為中文 UI 字串，英文複製需另譯
+    const EN_STAGE_LABEL = {
+        '無對應分期': 'No matching stage group (not in AJCC 9th table)'
+    };
+
     function buildCopyText(t, n, m, stageText, lang) {
         if (lang === 'zh') {
             return `肺癌 AJCC 第 9 版分期：\n` +
@@ -155,9 +160,10 @@
                 `期別：${stageText}\n` +
                 `（僅供教學參考，實際仍以臨床醫師與正式指引為準）`;
         }
+        const stageEn = EN_STAGE_LABEL[stageText] || stageText;
         return `Lung Cancer AJCC 9th Staging\n` +
             `TNM: c${t} ${n} ${m}\n` +
-            `Stage: ${stageText}\n` +
+            `Stage: ${stageEn}\n` +
             `For educational use only; not for clinical decision making.`;
     }
 
