@@ -11,7 +11,10 @@ const baseline = require('./fixtures/baseline-bcb1ffe.json');
 const INTENDED_CHANGES = {
     stage: () => undefined,
     valid: () => undefined,
-    desc: () => undefined
+    // fix(staging) #1：Stage IIIA/IIIB/IIIC 原本誤得 Stage II 描述（startsWith 順序）
+    desc: (row) => (row.stage.startsWith('Stage III')
+        ? '區域進展期，常累及縱膈或多站淋巴結，需多模式治療評估。'
+        : undefined)
 };
 
 test('baseline 涵蓋 10 T × 5 N × 5 M = 250 組', () => {

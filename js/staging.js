@@ -132,11 +132,12 @@
         if (stageText === 'Stage IB') {
             return '腫瘤稍大但仍局限於肺部，無淋巴結或遠端轉移。';
         }
-        if (stageText.startsWith('Stage II')) {
-            return '局部進展期，可能累及鄰近結構或同側肺門淋巴結。';
-        }
+        // 'Stage III*' 也以 'Stage II' 開頭，必須先判斷 III
         if (stageText.startsWith('Stage III')) {
             return '區域進展期，常累及縱膈或多站淋巴結，需多模式治療評估。';
+        }
+        if (stageText.startsWith('Stage II')) {
+            return '局部進展期，可能累及鄰近結構或同側肺門淋巴結。';
         }
         if (stageText.startsWith('Stage IV')) {
             return '遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。';
