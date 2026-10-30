@@ -133,14 +133,18 @@
             return '腫瘤稍大但仍局限於肺部，無淋巴結或遠端轉移。';
         }
         // 'Stage III*' 也以 'Stage II' 開頭，必須先判斷 III
+        // 敘述須涵蓋該期所有組合（例如 IIIA 含 T4 N0，不可寫「常累及縱膈」）
         if (stageText.startsWith('Stage III')) {
-            return '區域進展期，常累及縱膈或多站淋巴結，需多模式治療評估。';
+            return '區域進展期：較大或侵犯鄰近結構的腫瘤（T3–T4），和／或縱膈（N2）、對側或鎖骨上（N3）淋巴結轉移；需多專科評估治療。';
         }
         if (stageText.startsWith('Stage II')) {
-            return '局部進展期，可能累及鄰近結構或同側肺門淋巴結。';
+            return '局部進展：較大或侵犯鄰近結構的腫瘤（T2b–T3），或已有同側肺門（N1）淋巴結轉移；T1 合併單站縱膈（N2a）亦屬此期。';
         }
-        if (stageText.startsWith('Stage IV')) {
-            return '遠端轉移期，代表存在胸腔外或多處轉移，以全身性治療為主。';
+        if (stageText === 'Stage IVA') {
+            return '遠端轉移（IVA）：胸腔內轉移（對側肺結節、肋膜或心包膜結節／惡性積液，M1a），或單一胸腔外轉移（M1b）。';
+        }
+        if (stageText === 'Stage IVB') {
+            return '遠端轉移（IVB）：多處胸腔外轉移，位於單一器官系統（M1c1）或多個器官系統（M1c2）。';
         }
         if (stageText.includes('無對應分期')) {
             return '此 T / N / M 組合不在 AJCC 第 9 版標準分期表中，請檢查輸入是否正確，或參考原文指引。';
@@ -167,9 +171,33 @@
             `For educational use only; not for clinical decision making.`;
     }
 
+    // 腫瘤徑（cm）只能推出以大小定義的 T；侵犯結構（T3／T4）與 Tis／T1mi 須由使用者手動選擇。
+    // currentFromSize：目前的 T 是否由上一次徑長推得（是 → 可直接覆蓋）。
+    const SIZE_T_ORDER = ['T1a', 'T1b', 'T1c', 'T2a', 'T2b', 'T3', 'T4'];
+
+    function tBySize(sizeCm, currentT, currentFromSize) {
+        // 無效輸入沿用原狀態；保留手動值時 fromSize 為 false
+        const keep = (note, fromSize) => ({ t: currentT, changed: false, fromSize: !!fromSize, note: note });
+        if (sizeCm === '' || sizeCm === null || sizeCm === undefined) return keep('', currentFromSize);
+        const v = Number(sizeCm);
+        if (!isFinite(v)) return keep('', currentFromSize);
+        if (v <= 0) return keep('腫瘤徑須大於 0 cm', currentFromSize);
+
+        const sizeT = v <= 1 ? 'T1a' : v <= 2 ? 'T1b' : v <= 3 ? 'T1c' : v <= 4 ? 'T2a'
+            : v <= 5 ? 'T2b' : v <= 7 ? 'T3' : 'T4';
+        if (!currentFromSize) {
+            const manualRank = SIZE_T_ORDER.indexOf(currentT);
+            if (currentT === 'Tis' || currentT === 'T1mi' || manualRank > SIZE_T_ORDER.indexOf(sizeT)) {
+                return keep(`保留手動選擇的 ${currentT}（腫瘤徑推估為 ${sizeT}）`);
+            }
+        }
+        return { t: sizeT, changed: sizeT !== currentT, fromSize: true, note: '' };
+    }
+
     return {
         determineStage,
         getStageDescription,
-        buildCopyText
+        buildCopyText,
+        tBySize
     };
 }));

@@ -34,7 +34,11 @@
   - 分期表：Rami-Porta R, et al. *Proposals for Revision of the TNM Stage Groups in the Forthcoming (Ninth) Edition of the TNM Classification for Lung Cancer.* J Thorac Oncol 2024;19(7):1007–1027. doi:10.1016/j.jtho.2024.02.011
   - T／N／M 定義：同系列 IASLC Staging Project 9th edition T、N、M component 論文
 - 核對須**實際打開原文表格**，不憑記憶；取不到原文就標「未核對」
-- 核對狀態：截至 2026-10 審查（PR `fix/review-2026-10`），因環境網路無法取得原文，**分期表 50 格與選單定義皆為「未核對」**
+- 核對狀態（2026-10-30）：Rami-Porta 2024 全文需付費，未能逐格開表。改以兩份公開來源核對：
+  - [PubMed 38447919 摘要](https://pubmed.ncbi.nlm.nih.gov/38447919/)：T1N1 → IIA、T1N2a → IIB、T3N2a → IIIA、T2N2b → IIIB、M1c1／M1c2 → IVB
+  - Argentieri G, et al. *Eur Radiol* 2025（PMC12165876，開放取用）：N2a／N2b 在 T1–T4 的分期逐一列出；M1c1 = single organ system、M1c2 = multiple organ systems
+  - 第 9 版有變動的格子程式全部相符；其餘格（N0、N3、T2–T4 N1、M1a／M1b）屬「摘要未列變動 → 沿用第 8 版」的**推論**，尚未逐格對原文
+- 腫瘤徑推 T（`tBySize`）：只推以大小定義的 T；手動選的 Tis、T1mi 或高於徑長推估的 T（侵犯結構）不被覆蓋
 
 ## 分期邏輯現況（以測試為準）
 
