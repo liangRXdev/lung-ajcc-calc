@@ -251,8 +251,9 @@
         />
         <div class="helper-text">
             將依大小自動推估 T 期（僅考慮腫瘤徑長，未納入縱膈侵犯、多發結節等，
-            若有上述情形請自行調整 T 分期）。
+            若有上述情形請自行調整 T 分期；手動選擇的 Tis、T1mi 或較高的 T 不會被徑長覆蓋）。
         </div>
+        <div class="helper-text" id="size-note" aria-live="polite"></div>
     </div>
 
     <div class="form-group">
@@ -288,8 +289,8 @@
             <option value="M0">M0：無遠端轉移</option>
             <option value="M1a">M1a：對側肺葉 / 胸膜 / 心包膜結節</option>
             <option value="M1b">M1b：單一胸腔外轉移</option>
-            <option value="M1c1">M1c1：多處胸腔外轉移（單一器官）</option>
-            <option value="M1c2">M1c2：多處胸腔外轉移（多器官）</option>
+            <option value="M1c1">M1c1：多處胸腔外轉移（單一器官系統）</option>
+            <option value="M1c2">M1c2：多處胸腔外轉移（多個器官系統）</option>
         </select>
     </div>
 
@@ -341,6 +342,7 @@
     const nSelect = document.getElementById('n-stage');
     const mSelect = document.getElementById('m-stage');
     const sizeInput = document.getElementById('tumor-size');
+    const sizeNote = document.getElementById('size-note');
 
     const resultStageEl = document.getElementById('resultStage');
     const resultTNMEl = document.getElementById('resultTNM');
@@ -410,31 +412,20 @@
         updateResultAppearance(stage, valid);
     }
 
+    // 目前的 T 是否由腫瘤徑推得；使用者手動改 T 時設為 false，徑長就不會覆蓋手動選的 Tis／T1mi／較高 T
+    let tFromSize = false;
+
     function updateTBySize() {
-        const sizeVal = parseFloat(sizeInput.value);
-        if (isNaN(sizeVal) || sizeVal < 0) {
-            return;
-        }
+        const r = LungStaging.tBySize(sizeInput.value, tSelect.value, tFromSize);
+        sizeNote.textContent = r.note;
+        tFromSize = r.fromSize;
+        tSelect.value = r.t;
+        calculateStageAndUpdateUI();
+    }
 
-        let tVal = tSelect.value;
-
-        if (sizeVal <= 1) {
-            tVal = 'T1a';
-        } else if (sizeVal <= 2) {
-            tVal = 'T1b';
-        } else if (sizeVal <= 3) {
-            tVal = 'T1c';
-        } else if (sizeVal <= 4) {
-            tVal = 'T2a';
-        } else if (sizeVal <= 5) {
-            tVal = 'T2b';
-        } else if (sizeVal <= 7) {
-            tVal = 'T3';
-        } else {
-            tVal = 'T4';
-        }
-
-        tSelect.value = tVal;
+    function onManualTChange() {
+        tFromSize = false;
+        sizeNote.textContent = '';
         calculateStageAndUpdateUI();
     }
 
@@ -492,6 +483,8 @@
 
     function resetAllFields() {
         sizeInput.value = '';
+        sizeNote.textContent = '';
+        tFromSize = false;
         tSelect.value = 'TX';
         nSelect.value = 'N0';
         mSelect.value = 'M0';
@@ -506,7 +499,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        tSelect.addEventListener('change', calculateStageAndUpdateUI);
+        tSelect.addEventListener('change', onManualTChange);
         nSelect.addEventListener('change', calculateStageAndUpdateUI);
         mSelect.addEventListener('change', calculateStageAndUpdateUI);
         sizeInput.addEventListener('input', updateTBySize);
