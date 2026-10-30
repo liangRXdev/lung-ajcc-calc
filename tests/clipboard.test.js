@@ -92,3 +92,53 @@ test('feedback：reset → idle', () => {
     fb.reset();
     assert.equal(last(), 'idle');
 });
+
+// ---- 修正：複製回饋狀態 ----
+
+// 重現：成功複製後 2 秒內再按，第二次失敗 → alert 失敗，按鈕卻仍是「已複製！」
+test('feedback：先成功、再失敗 → 回到 idle', () => {
+    const { fb, last } = harness();
+    fb.succeed(fb.begin());
+    assert.equal(fb.fail(fb.begin()), true);
+    assert.equal(last(), 'idle');
+});
+
+// 重現：連按兩次（間隔 < 2 s），第一次的 timer 提早清掉第二次的「已複製！」
+test('feedback：新的成功會取消舊 timer', () => {
+    const { fb, timers, last } = harness();
+    fb.succeed(fb.begin());
+    fb.succeed(fb.begin());
+    assert.equal(timers.size, 1);
+    assert.equal(last(), 'copied');
+});
+
+// 重現：writeText 尚未 resolve 時改選 T/N/M（或重設），resolve 後顯示「已複製！」
+//      但剪貼簿內容是改選前的結果
+test('feedback：reset 後抵達的舊 succeed 被忽略', () => {
+    const { fb, last } = harness();
+    const token = fb.begin();
+    fb.reset();
+    assert.equal(fb.succeed(token), false);
+    assert.equal(last(), 'idle');
+});
+
+test('feedback：reset 後抵達的舊 fail 被忽略（不跳 alert）', () => {
+    const { fb } = harness();
+    const token = fb.begin();
+    fb.reset();
+    assert.equal(fb.fail(token), false);
+});
+
+test('feedback：reset 取消尚未觸發的 timer', () => {
+    const { fb, timers } = harness();
+    fb.succeed(fb.begin());
+    fb.reset();
+    assert.equal(timers.size, 0);
+});
+
+// 重現：execCommand 拋例外（例如權限）時 textarea 殘留在 DOM
+test('legacyCopy：execCommand 拋例外 → 回傳 false 且移除 textarea', () => {
+    const doc = fakeDoc({ execThrows: true });
+    assert.equal(C.legacyCopy('x', doc), false);
+    assert.equal(doc.children.length, 0);
+});

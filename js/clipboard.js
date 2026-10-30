@@ -20,11 +20,15 @@
         textArea.style.top = '-1000px';
         textArea.style.left = '-1000px';
         doc.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        const successful = doc.execCommand('copy');
-        doc.body.removeChild(textArea);
-        return successful;
+        try {
+            textArea.focus();
+            textArea.select();
+            return doc.execCommand('copy');
+        } catch (e) {
+            return false;
+        } finally {
+            doc.body.removeChild(textArea);
+        }
     }
 
     // 先試 Clipboard API，失敗改用 legacyCopy；resolve 為是否成功，不 reject
@@ -42,23 +46,49 @@
         return Promise.resolve(fallback());
     }
 
-    // 按鈕回饋：render('copied' | 'idle')；schedule 同 setTimeout
+    // 按鈕回饋：render('copied' | 'idle')；schedule/cancel 同 setTimeout/clearTimeout。
+    // begin() 取得 token；reset() 或下一次 begin() 之後，舊 token 的結果一律忽略，
+    // 避免非同步 writeText 晚到時對已變更的結果顯示「已複製」。
     function createCopyFeedback(opts) {
         const holdMs = opts.holdMs || 2000;
+        let generation = 0;
+        let timer = null;
+
+        function clearTimer() {
+            if (timer !== null) {
+                opts.cancel(timer);
+                timer = null;
+            }
+        }
+
+        function toIdle() {
+            clearTimer();
+            opts.render('idle');
+        }
+
         return {
             begin() {
-                return 0;
+                generation += 1;
+                return generation;
             },
-            succeed() {
+            succeed(token) {
+                if (token !== generation) return false;
+                clearTimer();
                 opts.render('copied');
-                opts.schedule(() => opts.render('idle'), holdMs);
+                timer = opts.schedule(() => {
+                    timer = null;
+                    opts.render('idle');
+                }, holdMs);
                 return true;
             },
-            fail() {
+            fail(token) {
+                if (token !== generation) return false;
+                toIdle();
                 return true;
             },
             reset() {
-                opts.render('idle');
+                generation += 1;
+                toIdle();
             }
         };
     }
