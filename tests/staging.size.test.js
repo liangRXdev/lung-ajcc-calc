@@ -48,6 +48,14 @@ test('T 原本就由徑長推得 → 徑長改小時跟著改', () => {
     assert.equal(S.tBySize(2, 'T3', true).t, 'T1b');
 });
 
+test('徑長清空或無效時，不改變「T 由徑長推得」的狀態', () => {
+    // 輸入 6 → T3（由徑長推得）→ 清空 → 再輸入 2：應變 T1b，不可被當成手動 T3 而保留
+    assert.equal(S.tBySize('', 'T3', true).fromSize, true);
+    assert.equal(S.tBySize(0, 'T3', true).fromSize, true);
+    assert.equal(S.tBySize('', 'T3', false).fromSize, false);
+    assert.equal(S.tBySize(2, 'T4', false).fromSize, false); // 保留手動值時為 false
+});
+
 test('手動 TX 輸入徑長 → 依徑長推 T（有徑長即可評估）', () => {
     assert.equal(S.tBySize(2.5, 'TX', false).t, 'T1c');
 });
