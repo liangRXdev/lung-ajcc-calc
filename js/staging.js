@@ -148,8 +148,22 @@
         return '請搭配 AJCC 第 9 版正式指引與臨床評估解讀此分期結果。';
     }
 
+    function buildCopyText(t, n, m, stageText, lang) {
+        if (lang === 'zh') {
+            return `肺癌 AJCC 第 9 版分期：\n` +
+                `TNM：c${t} ${n} ${m}\n` +
+                `期別：${stageText}\n` +
+                `（僅供教學參考，實際仍以臨床醫師與正式指引為準）`;
+        }
+        return `Lung Cancer AJCC 9th Staging\n` +
+            `TNM: c${t} ${n} ${m}\n` +
+            `Stage: ${stageText}\n` +
+            `For educational use only; not for clinical decision making.`;
+    }
+
     return {
         determineStage,
-        getStageDescription
+        getStageDescription,
+        buildCopyText
     };
 }));

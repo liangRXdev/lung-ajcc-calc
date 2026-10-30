@@ -333,7 +333,7 @@
 
 <script src="js/staging.js"></script>
 <script>
-    const { determineStage, getStageDescription } = window.LungStaging;
+    const { determineStage, getStageDescription, buildCopyText } = window.LungStaging;
 
     const tSelect = document.getElementById('t-stage');
     const nSelect = document.getElementById('n-stage');
@@ -451,21 +451,7 @@
         const stageText = resultStageEl.innerText;
         const lang = getSelectedCopyLang();
 
-        let textToCopy = '';
-
-        if (lang === 'zh') {
-            textToCopy =
-                `肺癌 AJCC 第 9 版分期：\n` +
-                `TNM：c${t} ${n} ${m}\n` +
-                `期別：${stageText}\n` +
-                `（僅供教學參考，實際仍以臨床醫師與正式指引為準）`;
-        } else {
-            textToCopy =
-                `Lung Cancer AJCC 9th Staging\n` +
-                `TNM: c${t} ${n} ${m}\n` +
-                `Stage: ${stageText}\n` +
-                `For educational use only; not for clinical decision making.`;
-        }
+        const textToCopy = buildCopyText(t, n, m, stageText, lang);
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(textToCopy).then(
